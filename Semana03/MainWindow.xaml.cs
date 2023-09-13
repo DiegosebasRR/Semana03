@@ -80,10 +80,10 @@ namespace Semana03
         {
             string firstNameFilter = FirstNameFilterTextBox.Text;
 
-            // Filter the DataGrid based on FirstName
+
             List<Student> filteredStudents = ListarEstudiantesListaObjetos().Where(student => student.FirstName.Contains(firstNameFilter)).ToList();
 
-            // Update the DataGrid's ItemsSource with the filtered list
+
             McDataGrid.ItemsSource = filteredStudents;
         }
 
